@@ -1,0 +1,218 @@
+*
+{
+    color: white;
+    font-family: "Segoe UI" !important;
+}
+
+.container
+{
+    width: 90%;
+    height: 350vh;
+    margin: 5vh auto;
+}
+
+.container .leftAlign
+{
+    width: 25%;
+    height: 100%;
+    float: left;
+    border-radius: 100px 0px 100px 0px;
+    background-color: var(--accent-color);
+}
+
+.container .leftAlign .section
+{
+    width: 90%;
+    height: auto;
+    margin: 50px auto 0px auto;
+}
+
+.container .leftAlign .section:nth-child(2)
+{
+    margin: 0px auto;
+}
+
+
+.container .leftAlign .backArrow
+{
+    color: var(--accent-color);
+    transition: all 0.5s ease;
+}
+
+.container .leftAlign .backArrow:hover
+{
+    color: var(--accent-color-dark);
+}
+
+.container .leftAlign .me
+{
+    width: 100%;
+    height: 15%;
+    overflow: hidden;
+    text-align: center;
+}
+
+.container .leftAlign .me img
+{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 50%;
+    border: 2px solid var(--main-color);
+    background-color: var(--main-color);
+    transform: translateY(-50%);
+    box-shadow: 0 0 5px var(--main-color);
+}
+
+.container .leftAlign .section h2
+{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+.container .leftAlign .section h3
+{
+    text-transform: uppercase;
+    font-size: 17px;
+    margin: 15px 0 5px 0;
+}
+
+.container .leftAlign .section a 
+{
+    display: inline-block;
+}
+
+.container .leftAlign .section a::after 
+{
+  display: block;
+  content: "";
+  padding-bottom: 0px;
+  border-bottom: 3px solid white;
+  transform: scaleX(0);
+  transition: transform 0.5s ease-in-out;
+  transform-origin: 0% 50%;
+}
+
+.container .leftAlign .section a:hover:after 
+{
+  transform: scalex(1);
+}
+
+.container .topbar
+{
+    width: 75%;
+    height: 3%;
+    float: left;
+    background-color: var(--accent-color);
+}
+
+.container .alignRight
+{
+    width: 75%;
+    height: 90%;
+    background: var(--accent-color);
+    float: left;
+}
+
+.container .alignRight .name{
+    margin-top: 50px;
+}
+
+.container .alignRight .content
+{
+    width: 100%;
+    height: 100%;
+    background: var(--main-color);
+    float: left;
+    border-radius: 150px 0px 0px 0px;
+}
+
+.container .alignRight .content .container
+{
+    width: 75%;
+    height: 100%;
+    margin: 0px auto;
+}
+
+.container h1{
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 100px;
+    margin-top: 100px;
+}
+
+.container .role
+{
+    text-transform: capitalize;
+    font-size: 35px;
+    margin: 20px 0px;
+}
+
+.container .section 
+{   
+    width: auto;
+    height: auto;
+    margin-top: 50px;
+}
+
+.container .alignRight .section:nth-child(3)
+{
+    margin-top: 100px;
+}
+
+.container h1 
+{   
+    font-size: 40px;
+    margin: 15px 0;
+}
+
+.container h2
+{   
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.container .section .year
+{   
+    font-size: 20px;
+}
+
+.container .section .degree
+{   
+    font-size: 20px;
+    font-weight: lighter;
+    color: var(--accent-color);
+    margin: 5px 0;
+}
+
+.container .section .jobTitle
+{   
+    font-size: 20px;
+    font-weight: lighter;
+    margin: 5px 0;
+}
+
+.container .section .skill
+{
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+.container .section .text
+{   
+    font-size: 20px;
+    font-weight: lighter;
+    margin: 7.5px 0;
+}
+
+
+.container .line
+{
+    width: 100%;
+    height: 2px;
+    background-color: var(--accent-color);
+    margin: 10px 0px;
+}
