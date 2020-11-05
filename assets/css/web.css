@@ -57,6 +57,7 @@ section .rightSection p
     font-family: "Arial";
     font-size: 20px;
     margin: 20px 50px;
+    line-height: 25px;
 }
 
 /* landing section */
@@ -83,7 +84,19 @@ section .rightSection p
     display: none;
 }
 
-.landing a .fa-arrow-left
+.landing .backButtonWrapper
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 1%;
+    z-index: 100;
+    padding-left: 3px;
+    padding-bottom: 3px;
+}
+
+
+.landing .backButtonWrapper a .fa-arrow-left
 {
     margin: 25px 0px;
     font-size: 25px;
@@ -308,3 +321,47 @@ section .rightSection p
     margin-top: 20px;
 }
 /* summary section */
+.summary .image-group
+{
+    float: left;
+}
+
+.summary .leftSection img
+{
+    width: 500px;
+    height: 375px;
+    position: absolute;
+    top: 17%;
+    left: 2.5%;
+    z-index: 5;
+}
+
+.summary .image-group img:hover + .shadow
+{
+  top: 17%;
+  left: 2.5%;
+}
+
+.summary .leftSection .shadow
+{
+    width: 500px;
+    height: 375px;
+    background-color: var(--main-color-dark);
+    z-index: 4;
+    position: absolute;
+    box-shadow: inset 0px 0px 15px 0px black;
+    top: 12%;
+    left: 5%;
+    transition: all 1s ease;
+}
+
+.summary .copyright
+{
+  color: white;
+  font-size: 25px;
+  font-family: "Dubai";
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+}
