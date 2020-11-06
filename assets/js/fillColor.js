@@ -8,7 +8,7 @@ let observer = new IntersectionObserver(sectionChecker, options);
 
 function sectionChecker(entries){
     entries.forEach(entry => {
-        if(entry.target.className == "about" || entry.target.className.includes("themeColorBefore"))
+        if(entry.target.className == "about" || entry.target.className.includes("themeColorAfter"))
         {
             entry.target.classList.remove('themeColorAfter');
             entry.target.classList.add("themeColorBefore");
