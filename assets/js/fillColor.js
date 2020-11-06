@@ -10,15 +10,13 @@ function sectionChecker(entries){
     entries.forEach(entry => {
         if(entry.target.className == "about" || entry.target.className.includes("themeColorBefore"))
         {
-            console.log("intersecting");
-            entry.target.classList.add("themeColorAfter");
-            entry.target.classList.remove("themeColorBefore");
+            entry.target.classList.remove('themeColorAfter');
+            entry.target.classList.add("themeColorBefore");
         }
         else
         {
-            console.log("not intersecting");
-            entry.target.classList.remove('themeColorAfter');
-            entry.target.classList.add("themeColorBefore");
+            entry.target.classList.add("themeColorAfter");
+            entry.target.classList.remove("themeColorBefore");
         }
        
     })
