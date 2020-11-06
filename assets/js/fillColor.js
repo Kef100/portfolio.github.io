@@ -14,13 +14,11 @@ function sectionChecker(entries){
         }
         if(entry.target.className == "about" || entry.target.className.includes("themeColorBefore"))
         {
-            console.log("Now it should activate");
             entry.target.classList.add("themeColorAfter");
             entry.target.classList.remove("themeColorBefore");
         }
         else
         {
-            console.log("Now it shouldn't activate");
             entry.target.classList.remove('themeColorAfter');
             entry.target.classList.add("themeColorBefore");
         }
