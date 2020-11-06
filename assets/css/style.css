@@ -63,7 +63,7 @@ section .container
 }
 
 /* landing page styles */
-.logo {
+.landing .logo {
   color: transparent;
   opacity: 0;
   font-family: "Vladimir script";
@@ -90,14 +90,14 @@ section .container
   }
 }
 
-.skills {
+.landing.skills {
   width: auto;
   height: auto;
   margin: 10px 0px;
   float: left;
 }
 
-.skills h2 {
+.landing .skills h2 {
   opacity: 0;
   color: white;
   font-size: 27px;
@@ -121,11 +121,11 @@ section .container
   }
 }
 
-.skills h2:nth-child(2)
+.landing .skills h2:nth-child(2)
 {
   animation-delay: 3300ms;
 }
-.skills h2:nth-child(3) 
+.landing .skills h2:nth-child(3) 
 {
   animation-delay: 3800ms;
   color: var(--accent-color);
@@ -181,7 +181,7 @@ section .container
   transition: all 1s ease;
 }
 
-.me 
+.landing .me 
 {
   width: auto;
   height: auto;
@@ -191,7 +191,7 @@ section .container
   float: left;
 }
 
-.me h2 
+.landing .me h2 
 {
   opacity: 0;
   color: white;
@@ -202,7 +202,7 @@ section .container
   animation: text-slide-right 3s ease-in-out 1 1800ms forwards;
 }
 
-.me a i 
+.landing .me a i 
 {
   opacity: 0;
   color: var(--accent-color);
@@ -213,21 +213,21 @@ section .container
   animation: text-slide-right 3s ease-in-out 1 forwards;
 }
 
-.me a:nth-child(2) i
+.landing .me a:nth-child(2) i
 {
   position: absolute;
   left: 60%;
   animation-delay: 2000ms;
 }
 
-.me a:nth-child(3) i
+.landing .me a:nth-child(3) i
 {
   position: absolute;
   left: 32.5%;
   animation-delay: 2250ms;
 }
 
-.me a:nth-child(4) i
+.landing .me a:nth-child(4) i
 {
   position: absolute;
   animation-delay: 2500ms;
@@ -245,7 +245,7 @@ section .container
   }
 }
 
-.me i::after 
+.landing .me i::after 
 {
   display: block;
   content: "";
@@ -255,12 +255,12 @@ section .container
   transform-origin: 0% 50%;
 }
 
-.me i:hover:after 
+.landing .me i:hover:after 
 {
   transform: scalex(1);
 }
 
-.navigation 
+.landing .navigation 
 {
   width: 600px;
   height: 600px;
@@ -271,12 +271,12 @@ section .container
   bottom: 2%;
 }
 
-.navigation h3
+.landing .navigation h3
 {
   white-space: nowrap;
 }
 
-.navigation a 
+.landing .navigation a 
 {
   opacity: 0;
   width: auto;
@@ -305,32 +305,32 @@ section .container
   }
 }
 
-.navigation a:nth-child(9)
+.landing .navigation a:nth-child(9)
 {
   animation-delay: 5000ms;
 }
 
-.navigation a:nth-child(7)
+.landing .navigation a:nth-child(7)
 {
   animation-delay: 5500ms;
 }
 
-.navigation a:nth-child(5)
+.landing .navigation a:nth-child(5)
 {
   animation-delay: 5750ms;
 }
 
-.navigation a:nth-child(3)
+.landing .navigation a:nth-child(3)
 {
   animation-delay: 6250ms;
 }
 
-.navigation a:nth-child(1)
+.landing .navigation a:nth-child(1)
 {
   animation-delay: 7000ms;
 }
 
-.navigation a::before 
+.landing .navigation a::before 
 {
   content: attr(data-text);
   position: absolute;
@@ -343,7 +343,7 @@ section .container
   transition: width 1s ease;
 }
 
-.navigation a:hover::before 
+.landing .navigation a:hover::before 
 {
   width: 100%;
 }
@@ -376,9 +376,9 @@ section .container
   transform: scalex(1);
 }
 
-.navigation .active,
-.navigation .active:hover,
-.navigation .active:focus
+.landing .navigation .active,
+.landing .navigation .active:hover,
+.landing .navigation .active:focus
 {
   color: white;
   cursor: default;
@@ -386,6 +386,36 @@ section .container
 
 
 /* about styles */
+.themeColorBefore .container .p-wrapper p .themeColor
+{
+  text-transform: capitalize;
+  color: white;
+  transition: all 1s ease-in-out;
+}
+
+.themeColorAfter .container .p-wrapper p .themeColor
+{
+  text-transform: capitalize;
+  color: var(--accent-color);
+  display: inline-block;
+  transition: all 1s 1s ease-in-out;
+}
+
+.themeColorAfter .container .p-wrapper p  a .themeColor::after 
+{
+  display: block;
+  content: "";
+  border-bottom: 3px solid var(--accent-color);
+  transform: scaleX(0);
+  transition: transform 0.5s ease-in-out;
+  transform-origin: 0% 50%;
+}
+
+.themeColorAfter .container .p-wrapper p  a .themeColor:hover:after
+{
+  transform: scalex(1);
+}
+
 .about h1 {
   color: white;
   font-size: 30px;
@@ -456,7 +486,7 @@ section .container
 }
 
 /* Software Styles */
-.software .info
+/* .software .info
 {
   margin-left: 15%;
   width: 35%;
@@ -551,7 +581,7 @@ section .container
   right: -5%;
   background-color: var(--main-color-dark);
   transition: all 1s ease;
-}
+} */
 
 /* Web Styles */
 .web .info
