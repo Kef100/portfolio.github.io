@@ -90,11 +90,29 @@ section .rightSection p
     height: 40px;
     position: fixed;
     z-index: 100;
-    top: 0;
+    top:  0px;
     left: 0;
     background: var(--main-color);
     text-align: center;
+    animation: loadNotice 2s ease-out forwards 1;
 }
+
+@keyframes loadNotice
+{
+    from{
+        top: -45px;
+    }
+    to{
+        top: 0px;
+    }    
+}
+
+.landing .hidden
+{
+    top: -45px;
+}
+
+
 .landing .notice p
 {
     font-size: 20px;
@@ -106,6 +124,20 @@ section .rightSection p
 .landing .notice p b
 {
     font-weight: bold;
+    color: var(--accent-color);
+}
+
+.landing .notice p i
+{
+    float: right;
+    margin: 0px 15px;
+    line-height: 40px;
+    transition: all 0.5s;
+}
+
+.landing .notice p i:hover
+{
+    cursor: pointer;
     color: var(--accent-color);
 }
 
