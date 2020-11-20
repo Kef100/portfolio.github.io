@@ -1,6 +1,6 @@
 const URL = window.location.href;
 var splitUrl = URL.split("/");
-var pageAnchor = splitUrl[4];
+var pageAnchor = splitUrl[5];
 var splitAnchor = pageAnchor.split("#");
 var page = splitAnchor[0];
 

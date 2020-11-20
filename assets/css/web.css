@@ -84,10 +84,35 @@ section .rightSection p
     display: none;
 }
 
+.landing .notice
+{
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    background: var(--main-color);
+    text-align: center;
+}
+.landing .notice p
+{
+    font-size: 20px;
+    line-height: 40px;
+    font-family: "Dubai";
+    color: white;
+}
+
+.landing .notice p b
+{
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
 .landing .backButtonWrapper
 {
     position: fixed;
-    top: 0;
+    top: 30px;
     right: 0;
     left: 1%;
     z-index: 100;
