@@ -66,15 +66,10 @@
 }
 
 @media screen and (min-width: 1535px){
-    section{
-        background: var(--main-color);
-    }
+
 }
 
 @media screen and (min-width: 2000px) {
-    section{
-        background: lightblue;
-    }
 
     .landing .logo
     {
@@ -123,9 +118,6 @@
 
 
 @media screen and (min-width: 2500px) {
-    section{
-        background: purple;
-    }
 
     .landing .logo
     {
@@ -173,9 +165,6 @@
 }
 
 @media screen and (min-width: 3500px) {
-    section{
-        background: firebrick;
-    }
 
     .preloader p
     {
