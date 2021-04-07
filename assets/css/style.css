@@ -132,12 +132,18 @@ section .container
   font-weight: bold;
 }
 
+.landing .image-group
+{
+  float: left;
+  overflow: auto;
+}
+
 .landing .image-group img 
 {
   opacity: 0;
   z-index: 5;
-  width: 30%;
-  height: 36%;
+  width: 517px;
+  height: 337px;
   position: absolute;
   top: 31%;
   left: 21%;
@@ -157,11 +163,6 @@ section .container
   }
 }
 
-.landing .image-group
-{
-  float: left;
-}
-
 .landing .image-group img:hover + .image-shadow
 {
   top: 31%;
@@ -171,8 +172,8 @@ section .container
 .landing .image-group .image-shadow 
 {
   z-index: 4;
-  width: 30%;
-  min-height: 36%;
+  width: 517px;
+  min-height: 337px;
   position: absolute;
   box-shadow: inset 0px 0px 15px 0px black;
   top: 34%;

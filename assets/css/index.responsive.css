@@ -1,6 +1,229 @@
-@media screen and (max-width: 1500px) {
-    section
+@media screen and (min-width: 1366px)
+{
+    /* Preloader */
+    .preloader p
     {
-        background-color: green;
+        font-size: 150px;
+        -webkit-text-stroke-width: 1px;
+    }
+
+    /* Landing */
+
+    .landing .image-group img 
+    {
+        width: 400px;
+        height: 225px;
+    }
+
+    .landing .image-group .image-shadow 
+    {
+        width: 400px;
+        min-height: 225px;
+    }
+    .landing .navigation a
+    {
+        font-size: 80px;
+        line-height: 80px;
+        -webkit-text-stroke-width: 3px;
+    }
+    .landing .navigation
+    {
+        width: 800px;
+        height: 800px;
+    }
+
+    /* About */
+    .about p
+    {
+        font-size: 18px;
+        line-height: 34px;
+    }
+    /* Web */
+
+    /* Contact */
+    .contact h1
+    {
+    font-size: 40px;
+    }
+    .contact .status
+    {
+    font-size: 20px;
+    line-height: 40px;
+    }
+    .contact .links
+    {
+    font-size: 20px;
+    }
+
+    .contact .links p
+    {
+        margin-left: 30px;
+    }
+    .contact .copyright
+    {
+    font-size: 20px;
     }
 }
+
+@media screen and (min-width: 1535px){
+    section{
+        background: var(--main-color);
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    section{
+        background: lightblue;
+    }
+
+    .landing .logo
+    {
+        font-size: 80px;
+    }
+
+    .landing .skills h2
+    {
+        font-size: 50px;
+        line-height: 54px;
+    }
+
+    .landing .image-group img 
+    {
+        width: 700px;
+        height: 400px;
+    }
+
+    .landing .image-group .image-shadow 
+    {
+        width: 700px;
+        min-height: 400px;
+    }
+    .landing .navigation a
+    {
+        font-size: 150px;
+        line-height: 150px;
+    }
+    .landing .navigation
+    {
+        width: 800px;
+        height: 800px;
+    }
+
+    .landing .me h2
+    {
+        font-size: 70px;
+        line-height: 82px;
+    }
+
+    .landing .me a i
+    {
+        font-size: 35px;
+    }
+}
+
+
+@media screen and (min-width: 2500px) {
+    section{
+        background: purple;
+    }
+
+    .landing .logo
+    {
+        font-size: 80px;
+    }
+
+    .landing .skills h2
+    {
+        font-size: 50px;
+        line-height: 54px;
+    }
+
+    .landing .image-group img 
+    {
+        width: 850px;
+        height: 480px;
+    }
+
+    .landing .image-group .image-shadow 
+    {
+        width: 850px;
+        min-height: 480px;
+    }
+    .landing .navigation a
+    {
+        font-size: 150px;
+        line-height: 150px;
+    }
+    .landing .navigation
+    {
+        width: 800px;
+        height: 800px;
+    }
+
+    .landing .me h2
+    {
+        font-size: 70px;
+        line-height: 82px;
+    }
+
+    .landing .me a i
+    {
+        font-size: 35px;
+    }
+}
+
+@media screen and (min-width: 3500px) {
+    section{
+        background: firebrick;
+    }
+
+    .preloader p
+    {
+        font-size: 500px;
+    }
+    .landing .logo
+    {
+        font-size: 160px;
+    }
+
+    .landing .skills h2
+    {
+        font-size: 80px;
+        line-height: 84px;
+    }
+
+    .landing .image-group img 
+    {
+        width: 1250px;
+        height: 703px;
+    }
+
+    .landing .image-group .image-shadow 
+    {
+        width: 1250px;
+        min-height: 703px;
+    }
+
+    .landing .navigation a
+    {
+        font-size: 225px;
+        line-height: 225px;
+    }
+    .landing .navigation
+    {
+        width: 1200px;
+        height: 1200px;
+    }
+
+    .landing .me h2
+    {
+        font-size: 100px;
+        line-height: 112px;
+    }
+
+    .landing .me a i
+    {
+        font-size: 40px;
+    }
+}
+
